@@ -44,3 +44,20 @@
     tag - video tag, source tag
     attributes of video tag - autoplay, controls, muted
     attributes of source tag - src (source link), type (video type)
+
+## 2nd March 
+### What is List?
+### Ordered List
+    tag - ol - ordered list - parent tag
+    li - list items
+    attributes 
+        type - A, a, I, i, 1 (default)
+        reversed - to reversed the list item
+        start - always accept number as value
+### Unordered Lists
+    tag - ul unordered list
+    li - list item
+    attributes - type -  Square, circle, disc, none
+
+### Description List
+    
