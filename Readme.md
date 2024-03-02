@@ -18,7 +18,7 @@
 ###### h6 - Heading 6
 
 ## Text Formate Tag
-### b, strong, i, em
+### 
 
 ### Q 1. Difference b/w b tage and strong tag, i tag and em tag?
 
@@ -35,12 +35,12 @@
     <div> and <span> is non-semantic tag
 
 ## Image and Multimedia
-### Image - 
+### Image 
     tag - img 
     attributes - src (source), alt 
     width, height
 
-## Video tag
+## Video 
     tag - video tag, source tag
     attributes of video tag - autoplay, controls, muted
     attributes of source tag - src (source link), type (video type)
