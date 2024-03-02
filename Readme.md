@@ -23,10 +23,16 @@
 ### Q 1. Difference b/w b tage and strong tag, i tag and em tag?
 
 ## Paragraph Tag - <p></p>
-# https://github.com/ErShubham2908/VGI_University
 
 
 # 1st March '24
+
+## Semantic tag - 
+    A semantic element clearly describes its meaning to both the browser and the developer.
+    Ex - <form> <table> <header> <footer> <article>
+
+## Non-semantic tag - 
+    <div> and <span> is non-semantic tag
 
 ## Image and Multimedia
 ### Image - 
@@ -35,4 +41,6 @@
     width, height
 
 ## Video tag
-    video - tag, source
+    tag - video tag, source tag
+    attributes of video tag - autoplay, controls, muted
+    attributes of source tag - src (source link), type (video type)
