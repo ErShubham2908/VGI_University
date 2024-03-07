@@ -61,3 +61,11 @@
 
 ### Description List
     
+
+# 7th mar '24
+
+## Table in HTML
+
+## Tag - Table, th - table heading, td - table data, tr - table row
+## Attrbiutes - table  (Border)
+## colspan, rowsapn, cellspacing, cellpadding
