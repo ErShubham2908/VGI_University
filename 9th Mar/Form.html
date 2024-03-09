@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form - HTML</title>
-</head>
-<body>
-    <h1></h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form - HTML</title>
+    </head>
+    <body>
+        <h1>Form in HTML</h1>
+        <form action="./index.html">
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                placeholder="Enter Your Name"
+                id="name"
+                name="name"
+                required
+            />
+            <br />
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                placeholder="Enter Your Email"
+                id="email"
+                name="email"
+            />
+            <br />
+            <label for="pass">Password:</label>
+            <input
+                type="password"
+                placeholder="Enter Your Password"
+                id="pass"
+                name="password"
+            />
+            <br />
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male" value="male" /><label
+                for="male"
+                >Male</label
+            >
+            <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="feamle"
+            /><label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other" /><label
+                for="other"
+                >Other</label
+            >
+            <br />
+            <label>Fav. Language</label>
+            <input type="checkbox" name="lag1" value="HTML" />
+            <label>HTML</label>
+            <input type="checkbox" name="lag2" value="CSS" />
+            <label>CSS</label>
+            <input type="checkbox" name="lag3" value="JavaScript" />
+            <label>JavaScript</label>
+            <input type="checkbox" name="lag4" value="React JS" />
+            <label>React JS</label> <br />
+            <h1>Advance Form</h1>
+            <label>Upload File</label>
+            <input type="file"/>
+            <label>DOB</label>
+            <input type="date" />
+            <label>Color</label>
+            <input type="color" />
+            <input type="submit" value="Sign In" />
+            <!-- <button>Sign in</button> -->
+        </form>
+    </body>
 </html>
+

@@ -79,4 +79,9 @@
 2. label - sep. closing tag
    1. attribute - for
 3. input - self closing  tag < input />
-   1. attributes - type, placeholder, name, id, value
+   1. attributes - type, placeholder, name, id, value, required
+
+
+### Q1. Create a form using HTML, form contain Name, Email, Password, Gender (Male, Female, Other), fav Language (HTML, CSS, JavScript, React JS) and Submit Button
+
+## Q2. Create a form - contain Name, email, password, DOB
