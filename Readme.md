@@ -69,3 +69,14 @@
 ## Tag - Table, th - table heading, td - table data, tr - table row
 ## Attrbiutes - table  (Border)
 ## colspan, rowsapn, cellspacing, cellpadding
+
+
+## 9th Mar '24
+
+## form in HTML
+1. Form tag -  sep closing tag
+   1. attributes - action 
+2. label - sep. closing tag
+   1. attribute - for
+3. input - self closing  tag < input />
+   1. attributes - type, placeholder, name, id, value
