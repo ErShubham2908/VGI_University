@@ -85,3 +85,7 @@
 ### Q1. Create a form using HTML, form contain Name, Email, Password, Gender (Male, Female, Other), fav Language (HTML, CSS, JavScript, React JS) and Submit Button
 
 ## Q2. Create a form - contain Name, email, password, DOB
+
+## 14th Mar '24
+
+### Q1. creaet a profile using HTML, profile contain student Name, Education, DOB, Address and P-size Photo. detail about your education in detail, address in detail, hobby, interesst, skill, technology you know, project you completed in school and college.
