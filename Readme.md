@@ -89,3 +89,20 @@
 ## 14th Mar '24
 
 ### Q1. creaet a profile using HTML, profile contain student Name, Education, DOB, Address and P-size Photo. detail about your education in detail, address in detail, hobby, interesst, skill, technology you know, project you completed in school and college.
+
+# 15th Mar '24
+## CSS - Cascading Style Sheet
+1. inline CSS
+2. internal CSS
+3. external CSS
+
+P - Inline > Internal > External
+
+CSS Selector
+1. Universal Selector (*)
+2. group Selector
+3. Tag selector
+4. ID Selector
+5. Class Selector
+
+## Q1. Heading with h3 and color is green and font size id 100px; (use class, A to M, ID N - Z)
