@@ -73,17 +73,47 @@ In HTML, there's a distinction between how tags are used depending on whether th
 **2. Separate Closing Tags:** These involve an opening tag with the element name followed by a closing angle bracket (>), and a separate closing tag that starts with a forward slash (/) followed by the element name and a closing angle bracket (>). They represent elements that can contain content within them.
 - Ex: < p>This is a paragraph.< /p>, < b>Bold text< b/>
 < div>This is a section with content.< /div>
+
 ## Image and Multimedia
-### Image 
-    tag - img 
-    attributes - src (source), alt 
-    width, height
+**1. Image:** Used to embed images into a web page.
+- tag: < img /> tag
+- Attributes: 
+  - src: (Required) Specifies the path to the image file.
+  - alt: (Highly recommended) Provides alternative text for the image, essential for accessibility and SEO.
+  - width: Sets the width of the image in pixels.
+  - height: Sets the height of the image in pixels.
 
-## Video 
-    tag - video tag, source tag
-    attributes of video tag - autoplay, controls, muted
-    attributes of source tag - src (source link), type (video type)
+**2. Video:** Used to embed videos into a web page. 
+- tag: video tag (Parent tag), source tag
+- Attributes: 
+  - src: (Required) Specifies the path to the video file.
+  - controls: Adds playback controls (play, pause, volume, etc.).
+  - autoplay: Starts playback automatically (use with caution for accessibility).
+  - loop: Plays the video in a loop.
+  - muted: Mutes the video by default.
+  - type: Specifies the MIME type of the video file (optional, browser usually infers).
+  - poster:  Sets an image to display before the video plays.
+  - width: Sets the width of the video player in pixels.
+  - height:  Sets the height of the video player in pixels.
 
+**3. iframe:** Used to embed content from another website (like a YouTube video) directly into your web page.
+- tag: iframe 
+- attributes: 
+  - src: (Required) Specifies the URL of the content to embed.
+  - frameborder: Controls the display of a border around the iframe (0 for no border).
+  - scrolling: Controls whether scrollbars appear in the iframe (e.g., "auto", "yes", or "no").
+  - allowfullscreen: Enables fullscreen mode for the embedded content (if applicable).
+  - width: Sets the width of the iframe in pixels.
+  - height: Sets the height of the iframe in pixels.
+**4. Audio:** Used to embed audio files into a web page.
+- tag: audio tag < audio> & source tag < source/>.
+- Attributes:
+  - src: (Required) Specifies the path to the audio file.
+  - controls: Adds playback controls (play, pause, volume, etc.).
+  - autoplay: Starts playback automatically (use with caution for accessibility).
+  - loop: Plays the audio in a loop.
+  - muted: Mutes the audio by default.
+  - type: Specifies the MIME type of the audio file (optional, browser usually infers).
 ## 2nd March 
 ### What is List?
 ### Ordered List
