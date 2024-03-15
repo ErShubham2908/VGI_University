@@ -114,22 +114,45 @@ In HTML, there's a distinction between how tags are used depending on whether th
   - loop: Plays the audio in a loop.
   - muted: Mutes the audio by default.
   - type: Specifies the MIME type of the audio file (optional, browser usually infers).
-## 2nd March 
-### What is List?
-### Ordered List
-    tag - ol - ordered list - parent tag
-    li - list items
-    attributes 
-        type - A, a, I, i, 1 (default)
-        reversed - to reversed the list item
-        start - always accept number as value
-### Unordered Lists
-    tag - ul unordered list
-    li - list item
-    attributes - type -  Square, circle, disc, none
 
-### Description List
+# List in HTML
+- **Definition :** In HTML, a list is a way to organize and display related pieces of content in a structured format. Lists are useful for presenting information in a clear and organized manner, making it easier for users to understand the relationships between different items.
+
+## Type of HTML List
+
+**1. Ordered List** An ordered list is defined using the < ol> tag in HTML. Each item within the list is defined using the < li> tag. By default, ordered lists display numbers (1, 2, 3...) to indicate the order of the items.
+- Tag: ol tag (ordered list), li tag (list item)
+- Attributes:
+  - type: This attribute specifies the numbering or lettering style used for the list items. Here are the common options:
+    - type="1" (default): Numbers the list items (1, 2, 3...)
+    - type="a": Lowercase alphabetical lettering (a, b, c...)
+    - type="A": Uppercase alphabetical lettering (A, B, C...)
+    - type="i": Lowercase Roman numerals (i, ii, iii...)
+    - type="I": Uppercase Roman numerals (I, II, III...)
+  - start: This attribute allows you to define a starting number or letter for the list. For example, start="4" would begin the list with "4" instead of "1".
+  - reversed: This attribute reverses the order of the numbering or lettering in the list.
+
+**2. Unordered List:** An unordered list in HTML is used to represent a collection of items where the order doesn't necessarily matter. These lists are typically displayed with bullet points to visually group the items.
+- An unordered list is defined using the < ul> tag in HTML.
+- Each item within the list is defined using the < li> tag.
+- By default, unordered lists display bullet points (●, ◦, etc.) for each list item.
+- Tag: ul tag (unordered list), 
+- Attribute: 
+  - type="disc" (default): The standard disc bullet (●)
+  - type="circle": A circle bullet (○)
+  - type="square": A square bullet (■)
     
+**3. Definition List:** Definition lists in HTML provide a structured way to define terms and their corresponding meanings. They are essentially like mini-glossaries embedded within your web page.
+- Tag:
+  - < dl>: This tag marks the beginning of the definition list.
+  - < dt>: This tag defines the term being explained.
+  - < dd>: This tag defines the description or definition of the term.
+- Attribute: 
+  - Definition lists are simple and don't have any specific attributes associated with their tags.
+  - The structure relies on the proper nesting of tags:
+  - The < dl> tag acts as a container for the entire definition list.
+  - Within < dl>, each term being defined is wrapped in a < dt> tag.
+  - The corresponding definition or description for the term goes inside a < dd> tag, always following the < dt> tag for the corresponding term.
 
 # 7th mar '24
 
