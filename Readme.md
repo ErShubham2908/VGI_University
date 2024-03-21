@@ -201,3 +201,21 @@ CSS Selector
 
 
 ## Font and Background in CSS
+
+## 21st Mar '24
+
+### Box-Model
+
+1 Margin: space b/w border and outside.
+2. border - width of border
+3. Padding: space b/w border and contant
+4. contant : text, image and video
+
+### Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding   is 20px each.
+
+## Position Properties
+1. Static - (Default)
+2. Absolute
+3. Relative
+4. Sticky
+5. Fixed
