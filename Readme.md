@@ -115,10 +115,10 @@ In HTML, there's a distinction between how tags are used depending on whether th
   - muted: Mutes the audio by default.
   - type: Specifies the MIME type of the audio file (optional, browser usually infers).
 
-# List in HTML
+# List
 - **Definition :** In HTML, a list is a way to organize and display related pieces of content in a structured format. Lists are useful for presenting information in a clear and organized manner, making it easier for users to understand the relationships between different items.
 
-## Type of HTML List
+### *Type of HTML List*
 
 **1. Ordered List** An ordered list is defined using the < ol> tag in HTML. Each item within the list is defined using the < li> tag. By default, ordered lists display numbers (1, 2, 3...) to indicate the order of the items.
 - Tag: ol tag (ordered list), li tag (list item)
@@ -154,36 +154,63 @@ In HTML, there's a distinction between how tags are used depending on whether th
   - Within < dl>, each term being defined is wrapped in a < dt> tag.
   - The corresponding definition or description for the term goes inside a < dd> tag, always following the < dt> tag for the corresponding term.
 
-# 7th mar '24
+# Table
+**Table:** Tables are a fundamental way to structure and present data in a two-dimensional format (rows and columns) on web pages. They are ideal for displaying information that has clear relationships between different categories.
+- Tag: < table>< /table>
+- Attributes: 
+  - **border:** Sets the width of the table's border (in pixels).
+  - **cellpadding:** Defines the space between the cell content and its border (in pixels).
+  - **cellspacing:** Defines the space between adjacent cells (in pixels).
+  - **collapse:** Specifies how adjacent table borders should be rendered (e.g., collapse for merging borders).
+  - **width:** Sets the width of the table (can be a percentage or pixel value).
+  - **align:** Aligns the table within its container (e.g., left, center, right).
 
-## Table in HTML
-
-## Tag - Table, th - table heading, td - table data, tr - table row
-## Attrbiutes - table  (Border)
-## colspan, rowsapn, cellspacing, cellpadding
-
-
-## 9th Mar '24
-
-## form in HTML
-1. Form tag -  sep closing tag
-   1. attributes - action 
-2. label - sep. closing tag
-   1. attribute - for
-3. input - self closing  tag < input />
-   1. attributes - type, placeholder, name, id, value, required
+**Table Structure**
+- **< table>:** Defines the beginning and end of the table.
+- **< tr>:** Defines a table row. Each row contains cells.
+- **< td>:** Defines a table data cell. Used for regular table content.
+- **< th>:** Defines a table header cell. Typically used for column labels and styled differently (often bold and centered).
 
 
-### Q1. Create a form using HTML, form contain Name, Email, Password, Gender (Male, Female, Other), fav Language (HTML, CSS, JavScript, React JS) and Submit Button
+# FORM
+**Form:** HTML forms are used to collect user input. They are defined using the < form> tag.
+- **Tag:**
+  - **Form tag:** Forms are created using the < form> element, which acts as a container for various form elements.
+  - **Label tag:** The **< label> tag** defines a label for an < input>, < select>, < textarea>, or < button> element. It improves accessibility by providing a clickable area that focuses its associated form element when clicked.
+  - **Attribute for label:** 
+    - **for:** Specifies which form element a label is bound to. It should match the id attribute of the associated form element.
+  - **Input tag:** The < input> tag is used to create input fields within a form.
+  - **Attribute for input:**
+    - **type:** Specifies the type of input field. Common values include "text", "password", "checkbox", "radio", "submit", etc.
+    - **name:** Specifies the name of the input field. This is used to identify the field in the form submission.
+    - **value:** Specifies the initial value of the input field.
+    - **placeholder:** Specifies a short hint that describes the expected value of the input field (displayed when the field is empty).
+    - **required:** Specifies that the input field must be filled out before submitting the form.
+    - **disabled:** Specifies that the input field is disabled and cannot be edited.
+    - **readonly:** Specifies that the input field is read-only (cannot be edited by the user).
+    - **maxlength:** Specifies the maximum number of characters allowed in the input field.
+    - **size:** Specifies the width of the input field, in characters.
+    - **autocomplete:** Specifies whether the browser should automatically complete the input value based on the user's input history.
+    - **autofocus:** Specifies that the input field should automatically get focus when the page loads.
 
-## Q2. Create a form - contain Name, email, password, DOB
+**Type Attribute in input tag:**
+- **text:** A single-line text input field.
+- **password:** A text field where the input is obscured (usually as asterisks) for security purposes.
+- **checkbox:** A checkbox that allows users to select multiple options.
+- **radio:** A radio button that allows users to select only one option from a group of options.
+- **submit:** A button that submits the form data to the server.
+- **button:** A button that can trigger custom JavaScript functions.
+- **file:** A file upload field that allows users to select files from their device.
+- **email:** A text field intended for entering an email address.
+- **number:** A text field intended for entering a numerical value.
 
-## 14th Mar '24
+**Q1.** Create a form using HTML, form contain Name, Email, Password, Gender (Male, Female, Other), fav Language (HTML, CSS, JavScript, React JS) and Submit Button.
 
-### Q1. creaet a profile using HTML, profile contain student Name, Education, DOB, Address and P-size Photo. detail about your education in detail, address in detail, hobby, interesst, skill, technology you know, project you completed in school and college.
+**Q2.** Create a form - contain Name, email, password, DOB.
 
-# 15th Mar '24
-## CSS - Cascading Style Sheet
+**Q3.** creaet a profile using HTML, profile contain student Name, Education, DOB, Address and P-size Photo. detail about your education in detail, address in detail, hobby, interesst, skill, technology you know, project you completed in school and college.
+
+# CSS - Cascading Style Sheet
 1. inline CSS
 2. internal CSS
 3. external CSS
