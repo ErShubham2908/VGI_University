@@ -74,7 +74,7 @@ In HTML, there's a distinction between how tags are used depending on whether th
 - Ex: < p>This is a paragraph.< /p>, < b>Bold text< b/>
 < div>This is a section with content.< /div>
 
-## Image and Multimedia
+# Image and Multimedia
 **1. Image:** Used to embed images into a web page.
 - tag: < img /> tag
 - Attributes: 
