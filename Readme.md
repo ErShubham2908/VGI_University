@@ -256,24 +256,24 @@ CSS Selector
 + **Semantic structure:** Encourages a more meaningful structure for your HTML content.
 
 1. **Container Properties:**
-   + **display: grid or display: inline-grid;:**
-     + Transforms an element into a grid container, the parent element that holds the grid items.
-     + grid is for block-level elements, while inline-grid allows inline elements to behave as grid containers.
-2. **Grid Lines and Tracks:**
+  + **display: grid or display: inline-grid;:**
+    + Transforms an element into a grid container, the parent element that holds the grid items.
+    + grid is for block-level elements, while inline-grid allows inline elements to behave as grid containers.
+1. **Grid Lines and Tracks:**
   + **grid-template-columns and grid-template-rows:**
     + Define the explicit sizing and number of grid tracks (columns and rows). You can specify values in pixels (px), percentages (%), or fractions (fr).
     + Example: .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 200px auto; } (Creates three equal-width columns and two rows: a fixed-height first row and an auto-height second row)
   + **grid-auto-columns and grid-auto-rows:**
     + Determine the implicit (default) size of grid tracks when explicit values haven't been set for grid-template-columns or grid-template-rows.
     + Example: .grid-container { display: grid; grid-auto-columns: minmax(200px, 1fr); } (Sets a minimum width of 200px for columns and switches to a flexible fraction layout if there's enough space)
-3. **Grid Item Placement:**
+1. **Grid Item Placement:**
    + **grid-column-start, grid-column-end, grid-row-start, and grid-row-end:**
      + Specify the grid lines on which a grid item should start and end, controlling its placement within the grid.
      + Example: .item1 { grid-column-start: 1; grid-row-start: 1; grid-column-end: span 2; } (Places item1 starting at the first column and first row, spanning two columns)
    + **grid-column and grid-row (shorthand):**
      + Combine grid-column-start and grid-row-start into a single property for simpler positioning.
      + Example: .item2 { grid: 2 / span 2; } (Places item2 starting at the second row and spanning two columns)
-4. **Grid Gaps:**
+2. **Grid Gaps:**
    + **row-gap and column-gap:**
      + Define the spacing between grid rows and columns, respectively.
      + Example: .grid-container { display: grid; row-gap: 20px; column-gap: 10px; } (Sets 20px spacing between rows and 10px spacing between columns)
