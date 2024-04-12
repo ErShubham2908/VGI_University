@@ -240,7 +240,7 @@ CSS Selector
 
 ### Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding   is 20px each.
 
-## Position Properties
+# Position Properties
 1. Static - (Default)
 2. Absolute
 3. Relative
@@ -279,4 +279,29 @@ CSS Selector
      + Example: .grid-container { display: grid; row-gap: 20px; column-gap: 10px; } (Sets 20px spacing between rows and 10px spacing between columns)
    + **gap (shorthand):**
      + Combines row-gap and column-gap into one property for convenience.
-     + Example: .grid-container { display: grid; gap: 15px; } (Sets a 15px gap between both rows and columns)
+     + Example: .grid-container { display: grid; gap: 15px; } (Sets a 15px gap between both rows and columns).
+
+
+# Pseudo Selector
+  1. pseudo element
+    + before
+    + after
+    + first-letter
+  2. pseudo class
+    + Example : 
+      + Hover
+      + active
+      + focus
+      + first-child
+      + nth-child
+
+# Transition
+  1. transition-property
+  2. transition-duration
+  3. transition-timing-function
+     1. linear
+     2. ease-in
+     3. ease-out
+     4. ease-in-out
+  4. transition-delay
+1. transition : property duration timing-function delay;
