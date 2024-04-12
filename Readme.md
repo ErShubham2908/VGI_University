@@ -218,33 +218,99 @@ In HTML, there's a distinction between how tags are used depending on whether th
 **2. internal CSS:** Internal CSS styles are defined within the < head> section of your HTML document using the < style> tag. This approach offers more organization than inline CSS and keeps your styles within the HTML file.
 
 **3. external CSS:** External CSS is the preferred method for larger websites. Styles are written in a separate CSS file (.css extension) and linked to your HTML documents using the < link> tag within the < head> section. This promotes code reusability and easier maintenance, as you can update the styles in one central location and have them reflected across all linked webpages.
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+
+```
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
 P - Inline > Internal > External
 
-CSS Selector
-1. Universal Selector (*)
-2. group Selector
-3. Tag selector
-4. ID Selector
-5. Class Selector
+## CSS Selector
 
-## Q1. Heading with h3 and color is green and font size id 100px; (use class, A to M, ID N - Z)
+**1. Universal Selector (*):**
+  + **Definition:** The universal selector matches any element type and is often used as a base style for all elements in a document.
+  + **Syntax:** Simply use an asterisk (*) as the selector.
+  + **Points:**
+    + The universal selector applies styles to all elements in the document unless overridden by more specific selectors.
+    + It's commonly used to reset default browser styles or to set consistent default styles across all elements.
+  + **Example:** 
+    ```
+    * { 
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+**2. group Selector:**
+  + **Definition:** Group selectors allow you to apply the same styles to multiple selectors in a single declaration.
+  + **Syntax:** Simply separate the selectors with commas.
+  + **Points:**
+    + Group selectors help reduce redundancy in CSS code by combining multiple selectors that share the same styles.
+    + They improve code readability and maintainability by grouping related selectors together.
+  + **Example:**   
+    ```
+      h1, h2, h3{ 
+        font-family: Arial, sans-serif;
+      } 
 
+**3. Tag selector:**
+  + **Definition:** Tag selectors target HTML elements based on their tag names.
+  + **Syntax:** Simply use the tag name as the selector.
+  + **Points:**
+    + Tag selectors apply styles to all elements of a particular tag type throughout the document.
+    + They are less specific than class or ID selectors and can be useful for applying broad styles to elements like paragraphs, headings, etc.
+    + Tag selectors can be combined with other selectors to make them more specific.
+  + **Example:**
+    ```
+    p{
+      font-size: 3em;
+      border: 1px solid black;
+    }
+**4. ID Selector: (#id_Name)**
+  + **Definition:** ID selectors target HTML elements based on their unique ID attribute. IDs should be unique within a document, and each element should have only one ID.
+  + **Syntax:** To select elements by ID, use a hash (#) followed by the ID name: #idname.
+  + **Points:**
+    + IDs have higher specificity compared to classes, meaning they override class styles.
+    + IDs should be unique within a document, as using the same ID for multiple elements can lead to unexpected behavior.
+    + Unlike classes, IDs should generally be used sparingly, typically for elements that are unique and not repeated.
+  + **Example:** 
+      ```
+      #header{ 
+        font-size: 24px;
+      }
+**5. Class Selector: (.class_Name)**
+  + **Definition:** Class selectors target HTML elements based on their class attribute. The class attribute can be applied to multiple elements, allowing you to style multiple elements with a single class.
+  + **Syntax:** To select elements by class, use a period **(.)** followed by the class name: **.classname**.
+  + **Points:**
+    + Classes are reusable and can be applied to multiple elements throughout a document.
+    + You can apply multiple classes to a single element by separating them with spaces in the HTML attribute.
+    + Class selectors have lower specificity compared to ID selectors, meaning they are overridden by IDs.
+  + **Example:**
+    + ``` 
+      .button{
+        color: blue;
+        font-size: 2em;
+      }
 
-## Font and Background in CSS
+**Q1. Heading with h3 and color is green and font size id 100px; (use class, A to M, ID N - Z)**
 
-## 21st Mar '24
+## Box-Model
+The CSS box model is a fundamental concept in web design that defines how elements are structured and positioned on a web page. It's essentially a mental model that browsers use to render HTML elements on the screen. Understanding this model is crucial for building well-structured and visually appealing websites.
 
-### Box-Model
-
-1 Margin: space b/w border and outside.
-2. border - width of border
-3. Padding: space b/w border and contant
-4. contant : text, image and video
-
-### Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding   is 20px each.
+1. **Content:** This is the core area where your element's actual content resides. It can be text, images, videos, or any other web content. You can control the size of this area using the width and height properties in CSS.
+2. **Padding:** Padding creates a transparent inner layer around the content. It adds space between the content and the border of the element. Padding is defined using the padding property, which accepts values for all four sides (top, right, bottom, left) or horizontally and vertically.
+   + Padding can be set using properties like **padding-top,** **padding-right,** **padding-bottom,** and **padding-left**.
+3. **Border:** The border surrounds the content and padding, providing a visual separation from other elements on the page. You can control the style (solid, dashed, dotted), color, and thickness of the border using properties like border-style, border-color, and border-width.
+   + You can set border properties using **border-width**, **border-style**, and **border-color**.
+4. **Margin:** Margin creates a transparent outer layer around the entire box (content, padding, and border). It adds space between the element and its neighboring elements. Margins are defined using the margin property, similar to padding.
+   + Margin properties include **margin-top**, **margin-right**, **margin-bottom**, and **margin-left**.
+  
+**Benefits of the Box Model:**
+  + **Precise control over element layout:** The box model allows you to define clear separations between elements using margins and padding.
+  + **Responsive design:** By understanding how box model properties interact, you can create layouts that adapt to different screen sizes.
+  + **Consistent visual appearance:** The box model ensures a consistent way for browsers to render elements across different platforms.
+  
+**Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding   is 20px each.**
 
 # Position Properties
 1. Static - (Default)
