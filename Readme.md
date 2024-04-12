@@ -210,11 +210,17 @@ In HTML, there's a distinction between how tags are used depending on whether th
 
 **Q3.** creaet a profile using HTML, profile contain student Name, Education, DOB, Address and P-size Photo. detail about your education in detail, address in detail, hobby, interesst, skill, technology you know, project you completed in school and college.
 
-# CSS - Cascading Style Sheet
-1. inline CSS
-2. internal CSS
-3. external CSS
+# **CSS - Cascading Style Sheet**
+**CSS:** Which stands for Cascading Style Sheets, is a crucial language for web development. It defines how HTML elements are presented on a screen, in print, or on other media.
 
+**1. inline CSS:** Inline CSS involves embedding styles directly within the HTML element tags using the style attribute. While convenient for quick modifications, it can clutter your HTML code and make it difficult to maintain for larger projects.
+
+**2. internal CSS:** Internal CSS styles are defined within the < head> section of your HTML document using the < style> tag. This approach offers more organization than inline CSS and keeps your styles within the HTML file.
+
+**3. external CSS:** External CSS is the preferred method for larger websites. Styles are written in a separate CSS file (.css extension) and linked to your HTML documents using the < link> tag within the < head> section. This promotes code reusability and easier maintenance, as you can update the styles in one central location and have them reflected across all linked webpages.
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 P - Inline > Internal > External
 
 CSS Selector
