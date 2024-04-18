@@ -312,12 +312,18 @@ The CSS box model is a fundamental concept in web design that defines how elemen
   
 **Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding   is 20px each.**
 
-# Position Properties
-1. Static - (Default)
+# CSS Position
+The **position** property in CSS governs how an HTML element is positioned within a document's layout. It offers five distinct values that control the element's placement relative to its usual flow in the document or the viewport (the visible area of the browser window).
+**1. Static - (Default):**
+  + Elements with **position: static** (the default) occupy their standard position in the document's flow, meaning they're laid out one after another in the order they appear in the HTML code.
+  + The **top**, **right**, **bottom**, and **left** properties have no effect on statically positioned elements.
 2. Absolute
-3. Relative
-4. Sticky
-5. Fixed
+   + Elements with position: absolute are removed from the document's flow and positioned relative to their nearest containing block (often the parent element or a block-level element like a <  div>).
+   + The top, right, bottom, and left properties are used to specify the absolute position of the element within its containing block.
+   + Absolutely positioned elements create gaps in the document's flow where they would have been without absolute positioning.
+1. Relative
+2. Sticky
+3. Fixed
 
 # Display Grid
 **Grid:** CSS Grid is a powerful layout system that allows you to create flexible, two-dimensional grids of elements on a web page. It offers a more intuitive and efficient way to structure complex layouts compared to traditional methods like floats or tables.
@@ -377,3 +383,4 @@ The CSS box model is a fundamental concept in web design that defines how elemen
      4. ease-in-out
   4. transition-delay
 1. transition : property duration timing-function delay;
+

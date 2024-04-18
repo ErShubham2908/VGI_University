@@ -5,3 +5,9 @@
 4. Implement form validation using HTML attributes.
 5. Apply CSS styles to format the text, change fonts, and set background colors for HTML elements.
 6. Add borders and margins to elements to achieve specific layouts.
+
+
+# Question - 13th April 
+1. Create CSS transitions to add smooth animations to HTML elements.
+2. Apply pseudo-classes and pseudo-elements to style specific states and elements.
+3. How to center a container (Wite all possible solution)?

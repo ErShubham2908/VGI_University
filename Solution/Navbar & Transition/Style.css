@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.child1 h1{
+    text-shadow: 15px 15px 0px rgba(234, 8, 8, 0.795);
+}
+
 .child2 a{
     border: 2px solid black;
     text-decoration: none;
@@ -24,7 +28,8 @@
 }
 
 .child2 a:hover{
-    background-color: black;
+    /* background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 15px; */
+    box-shadow: 5px 5px 10px red;
 }

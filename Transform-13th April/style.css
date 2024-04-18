@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 70%;
+    height: auto;
+    border: 1px solid black;
+    /* Margin - Auto */
+    margin: auto;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 1px solid black;
+    transition: all 2s ease-in-out .5s;
+}
+ 
+.child1{
+    transform: translate(200px);
+}
+
+.child:hover{
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+.child3{
+    transform: scale(1.5, 2);
+}
+
+.child4{
+    transform: skew(50deg);
+}
