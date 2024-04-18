@@ -456,7 +456,7 @@ h1 {
 
 **2. Box-Shadow:** The box-shadow property adds shadow effects to an element's box (such as a < div>). It creates a shadow behind the box, giving it depth and dimensionality.
 
-**+ CSS Property:**
+**CSS Property:**
 
 ```
 box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [inset];
