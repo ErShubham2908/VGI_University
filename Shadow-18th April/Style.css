@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    width: 50%;
+    height: auto;
+    border: 1px solid red;
+    font-size: 3em;
+    font-weight: 900;
+    /* margin: auto;    */
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    /* background-image: linear-gradient(lightblue, black);     */
+    /* color: white; */
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+}
+
+.name{
+    text-align: center;
+    text-shadow: 5px 5px 10px black; 
+    animation-name: changecolor ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+
+}
+
+@keyframes changecolor{
+    25%{
+        color: #e45df2;
+        background-color: white;
+    }
+    50%{
+        color: aquamarine;
+        background-color: white;
+    }
+    75%{
+        color: lightgoldenrodyellow;
+        background-color: white;
+    }
+    100%{
+        color: blue;
+        /* background-color: black; */
+    }
+}

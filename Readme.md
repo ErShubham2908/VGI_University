@@ -17,11 +17,17 @@ These tags define the various elements of a webpage such as headings, paragraphs
 
 3.  Content : This is the information that goes between the start and end tags of an element. It can be text, images, videos, or even other HTML elements (elements can be nested within each other). The content determines what the user sees or interacts with on the webpage.
 
-    Ex : `<p>This is Paragraph Content</p>`
+    Ex : 
+    ```
+    <p>This is Paragraph Content</p>
+    ```
 
 4.  Elements : An element is a complete set of tags and their content, including the opening tag, closing tag, and any content nested within them. Together, they define a particular component or piece of content on a webpage.
 
-    Ex : `<p>This is a Paragraph.</p>`
+    Ex : 
+    ```
+    <p>This is a Paragraph.</p>
+    ```
 
 ## heading In HTML - Six heading tag
 
@@ -264,11 +270,13 @@ P - Inline > Internal > External
     -   The universal selector applies styles to all elements in the document unless overridden by more specific selectors.
     -   It's commonly used to reset default browser styles or to set consistent default styles across all elements.
 -   **Example:**
-    ``` \* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    ```
+    .class_name {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+    ```
     **2. group Selector:**
 -   **Definition:** Group selectors allow you to apply the same styles to multiple selectors in a single declaration.
 -   **Syntax:** Simply separate the selectors with commas.
@@ -292,10 +300,11 @@ P - Inline > Internal > External
     -   Tag selectors can be combined with other selectors to make them more specific.
 -   **Example:**
     ```
-    p{
-    font-size: 3em;
-    border: 1px solid black;
-    }
+      p{
+        font-size: 3em;
+        border: 1px solid black;
+      }
+    ```
     **4. ID Selector: (#id_Name)**
 -   **Definition:** ID selectors target HTML elements based on their unique ID attribute. IDs should be unique within a document, and each element should have only one ID.
 -   **Syntax:** To select elements by ID, use a hash (#) followed by the ID name: #idname.
@@ -305,9 +314,10 @@ P - Inline > Internal > External
     -   Unlike classes, IDs should generally be used sparingly, typically for elements that are unique and not repeated.
 -   **Example:**
     ```
-    #header{
-    font-size: 24px;
-    }
+      #header{
+        font-size: 24px;
+      }
+    ```
     **5. Class Selector: (.class_Name)**
 -   **Definition:** Class selectors target HTML elements based on their class attribute. The class attribute can be applied to multiple elements, allowing you to style multiple elements with a single class.
 -   **Syntax:** To select elements by class, use a period **(.)** followed by the class name: **.classname**.
@@ -349,17 +359,29 @@ The CSS box model is a fundamental concept in web design that defines how elemen
 
 The **position** property in CSS governs how an HTML element is positioned within a document's layout. It offers five distinct values that control the element's placement relative to its usual flow in the document or the viewport (the visible area of the browser window).
 **1. Static - (Default):**
-
 -   Elements with **position: static** (the default) occupy their standard position in the document's flow, meaning they're laid out one after another in the order they appear in the HTML code.
 -   The **top**, **right**, **bottom**, and **left** properties have no effect on statically positioned elements.
+-   ```
+.absolute-element {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}```
 
-2. Absolute
+**2. Absolute**
     - Elements with position: absolute are removed from the document's flow and positioned relative to their nearest containing block (often the parent element or a block-level element like a < div>).
     - The top, right, bottom, and left properties are used to specify the absolute position of the element within its containing block.
     - Absolutely positioned elements create gaps in the document's flow where they would have been without absolute positioning.
+  - ```
+    .absolute-element {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    } ```
+
 1. Relative
-1. Sticky
-1. Fixed
+2. Sticky
+3. Fixed
 
 # Display Grid
 
@@ -404,8 +426,6 @@ The **position** property in CSS governs how an HTML element is positioned withi
 # Pseudo Selector
 
 1. pseudo element
-
-
     + before
     + after
     + first-letter
