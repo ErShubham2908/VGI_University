@@ -1,0 +1,73 @@
+/* .child::before{
+    content: "Hiii";
+}
+
+.child::after{
+    content: "Hello";
+} */
+
+.parent{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child h1{
+    font-size: 3em;
+    font-style: italic;
+    font-family: "Platypi", serif;
+    color: lightgreen;
+    position: relative;
+}
+
+
+.child h1::after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.child h1:hover::after{
+    animation: motion 2s;
+    background-color: black;
+    border: 1px solid black;
+}
+
+@keyframes motion{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+
+}
+
+
+ol li{
+    font-size: 1.5em;
+}
+
+ol li:nth-child(3n+0){
+    color: red;
+    font-size: 2em;
+}
+
+ol li:nth-child(3n+1){
+    color: green;
+    font-size: 2.2em;
+}
+
+ol li:nth-child(3n+2){
+    color: blue;
+}

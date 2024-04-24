@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 96%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(17, 75, 102);
+}
+
+.header h1{
+    text-align: center;
+    color: white;
+}
