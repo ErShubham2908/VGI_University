@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    position: relative;
+    margin: auto;
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-color: aqua;
+    box-shadow: 0 10px 5px black;
+    /* animation-name: jumpingball;
+    animation-duration: 5s; */
+    animation: jumpingball 5s linear infinite  ;
+}
+
+@keyframes jumpingball{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+
+    25%{
+        top: 0px;
+        left: 400px;
+    }
+
+    50%{
+        top: 400px;
+        left: 400px;
+    }
+
+    75%{
+        top: 400px;
+        left: 0px;
+    }
+
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}

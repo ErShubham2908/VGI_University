@@ -34,20 +34,15 @@ These tags define the various elements of a webpage such as headings, paragraphs
 ## heading In HTML - Six heading tag
 
 # h1 - Heading 1
-
 ## h2 - Heading 2
-
 ### h3 - Heading 3
-
 #### h4 - Heading 4
-
 ##### h5 - Heading 5
-
 ###### h6 - Heading 6
 
 # Q 1. Difference b/w b tage and strong tag, i tag and em tag?
 
-## Fonts tag in HTML
+# Fonts tag in HTML
 
 1. **b tag:** The < b> tag is used to make text bold. However, it doesn't carry any semantic meaning and is purely presentational.
 2. **strong tag:** Similar to < b>, the < strong> tag also makes text bold, but it carries semantic weight, indicating that the enclosed text is of strong importance.
@@ -60,7 +55,7 @@ These tags define the various elements of a webpage such as headings, paragraphs
 9. **sup:** The < sup> tag is used for superscript text, often used for mathematical expressions.
 10. **sub:** The < sub> tag is used for subscript text, typically used for footnotes or chemical formulas.
 
-## Tag in HTML
+# Tag in HTML
 
 **1. Semantic tag:** A semantic element clearly describes its meaning to both the browser and the developer.
 
@@ -86,7 +81,7 @@ In HTML, there's a distinction between how tags are used depending on whether th
 
 **1. Self-Closing Tags:** These tags are written with a forward slash (/) directly following the element name and before the closing angle bracket (>). They represent elements that don't contain any content within them.
 
-**\*Note:** While self-closing tags are valid in HTML, some stricter environments like XML might require them to be closed with separate tags (e.g., < br> instead of < br />).
+**Note:** While self-closing tags are valid in HTML, some stricter environments like XML might require them to be closed with separate tags (e.g., < br> instead of < br />).
 
 -   Ex: < br/> (line break), < hr/> (horizontal rule), < img src="image.jpg" alt="Image description" /> (image), < input type="text" name="username" /> (form input field).
 
@@ -98,7 +93,6 @@ In HTML, there's a distinction between how tags are used depending on whether th
 # Image and Multimedia
 
 **1. Image:** Used to embed images into a web page.
-
 -   tag: < img /> tag
 -   Attributes:
     -   src: (Required) Specifies the path to the image file.
@@ -107,7 +101,6 @@ In HTML, there's a distinction between how tags are used depending on whether th
     -   height: Sets the height of the image in pixels.
 
 **2. Video:** Used to embed videos into a web page.
-
 -   tag: video tag (Parent tag), source tag
 -   Attributes:
     -   src: (Required) Specifies the path to the video file.
@@ -121,7 +114,6 @@ In HTML, there's a distinction between how tags are used depending on whether th
     -   height: Sets the height of the video player in pixels.
 
 **3. iframe:** Used to embed content from another website (like a YouTube video) directly into your web page.
-
 -   tag: iframe
 -   attributes:
     -   src: (Required) Specifies the URL of the content to embed.
@@ -144,7 +136,7 @@ In HTML, there's a distinction between how tags are used depending on whether th
 
 -   **Definition :** In HTML, a list is a way to organize and display related pieces of content in a structured format. Lists are useful for presenting information in a clear and organized manner, making it easier for users to understand the relationships between different items.
 
-### _Type of HTML List_
+## _Type of HTML List_
 
 **1. Ordered List** An ordered list is defined using the < ol> tag in HTML. Each item within the list is defined using the < li> tag. By default, ordered lists display numbers (1, 2, 3...) to indicate the order of the items.
 
@@ -198,10 +190,10 @@ In HTML, there's a distinction between how tags are used depending on whether th
 
 **Table Structure**
 
--   **< table>:** Defines the beginning and end of the table.
--   **< tr>:** Defines a table row. Each row contains cells.
--   **< td>:** Defines a table data cell. Used for regular table content.
--   **< th>:** Defines a table header cell. Typically used for column labels and styled differently (often bold and centered).
+-   **```<table>:```** Defines the beginning and end of the table.
+-   **```<tr>:```** Defines a table row. Each row contains cells.
+-   **```<td>:```** Defines a table data cell. Used for regular table content.
+-   **```<th>:```** Defines a table header cell. Typically used for column labels and styled differently (often bold and centered).
 
 # FORM
 
@@ -209,10 +201,10 @@ In HTML, there's a distinction between how tags are used depending on whether th
 
 -   **Tag:**
     -   **Form tag:** Forms are created using the < form> element, which acts as a container for various form elements.
-    -   **Label tag:** The **< label> tag** defines a label for an < input>, < select>, < textarea>, or < button> element. It improves accessibility by providing a clickable area that focuses its associated form element when clicked.
+    -   **Label tag:** The **```<label>``` tag** defines a label for an ```<input>```, ```<select>```, ```<textarea>```, or ```<button>``` element. It improves accessibility by providing a clickable area that focuses its associated form element when clicked.
     -   **Attribute for label:**
         -   **for:** Specifies which form element a label is bound to. It should match the id attribute of the associated form element.
-    -   **Input tag:** The < input> tag is used to create input fields within a form.
+    -   **Input tag:** The ```<input>``` tag is used to create input fields within a form.
     -   **Attribute for input:**
         -   **type:** Specifies the type of input field. Common values include "text", "password", "checkbox", "radio", "submit", etc.
         -   **name:** Specifies the name of the input field. This is used to identify the field in the form submission.
@@ -264,10 +256,10 @@ P - Inline > Internal > External
 
 ## CSS Selector
 
-**1. Universal Selector (\*):**
+**1. Universal Selector (*):**
 
 -   **Definition:** The universal selector matches any element type and is often used as a base style for all elements in a document.
--   **Syntax:** Simply use an asterisk (\*) as the selector.
+-   **Syntax:** Simply use an asterisk (*) as the selector.
 -   **Points:**
     -   The universal selector applies styles to all elements in the document unless overridden by more specific selectors.
     -   It's commonly used to reset default browser styles or to set consistent default styles across all elements.
@@ -381,9 +373,20 @@ The **position** property in CSS governs how an HTML element is positioned withi
       right: 0;
     } ```
 
-1. Relative
-2. Sticky
-3. Fixed
+3. Relative
+   - Elements with position: relative remain in the document's flow but can be shifted relative to their original position using the top, right, bottom, and left properties.
+   - These offset values are applied relative to the element's original position, not the viewport or any containing element.
+   - Elements retain their place in the normal flow but can be offset using top, bottom, left, and right properties.
+   - Offsets are relative to the element's original position in the flow.
+   ```
+   .relative-element {
+        position: relative;
+        top: 50px; 
+        left: 20px;  
+} 
+```
+4. Sticky
+5. Fixed
 
 # Display Grid
 
@@ -433,8 +436,6 @@ The **position** property in CSS governs how an HTML element is positioned withi
     + first-letter
 
 2. pseudo class
-
-
     + Example :
       + Hover
       + active
