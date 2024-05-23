@@ -1,0 +1,39 @@
+.parent{
+    width: 1024px;
+    height: 700px;
+    border: 1px solid red;
+}
+
+/* .child{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+} */
+
+@media (max-width : 756px){
+    body{
+        background-color: red;
+    }
+}
+
+@media (min-width: 551px )and (max-width: 850px){
+    body{
+        background-color: green;
+    }
+    .child{
+        color:  white;
+        font-size: 2em;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 550px){
+    body{
+        background-color: green;
+    }
+    .child{
+        color:  white;
+        font-size: 2em;
+        font-weight: 800;
+    }
+}
