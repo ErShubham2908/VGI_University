@@ -655,7 +655,9 @@ Please follow resp. link for Bootstrap code and Docs: [Click Here](https://githu
 # Bootstrap CDN:
  - Create an HTML File
  - Link Bootstrap CSS file
-   - [link] (<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >)
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+```
  - Link Bootstrap JavaScript files
  - First JavaScript File: [link]()
  - Second JavaScript File: [link]()
