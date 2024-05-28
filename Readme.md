@@ -659,6 +659,8 @@ Please follow resp. link for Bootstrap code and Docs: [Click Here](https://githu
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
 ```
  - Link Bootstrap JavaScript files
- - First JavaScript File: [link]()
- - Second JavaScript File: [link]()
+```
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+```
 
