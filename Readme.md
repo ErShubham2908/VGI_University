@@ -584,30 +584,31 @@ box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
 3. media-feature: Specifies the conditions (e.g., screen width) that must be met for the styles to apply.
 
 **Common Media Types:**
+
 - all: Suitable for all devices.
 - screen: For computer screens, tablets, smartphones, etc.
 - print: For printed materials and print previews.
 
 **Media Features:**
-    - **Width and Height**
+   - **Width and Height**
       - min-width: Minimum width of the viewport.
       - max-width: Maximum width of the viewport.
       - min-height: Minimum height of the viewport.
       - max-height: Maximum height of the viewport.
-    - **Resolution**
+   - **Resolution**
       - Specifies the resolution of the device (e.g., min-resolution, max-resolution).
-    - **Orientation**
+   - **Orientation**
       - Determines if the device is in landscape or portrait mode.
-    - **Aspect Ratio**
+   - **Aspect Ratio**
       - The ratio of width to height of the viewport.
-    - **Breakpoints:**
+   - **Breakpoints:**
       - Predefined screen widths at which the design changes are known as breakpoints.
       - Common breakpoints for responsive design:
         - 480px: Mobile devices.
         - 768px: Tablets.
         - 1024px: Small desktops.
         - 1200px: Large desktops.
-    - **Logical Operators:**
+   - **Logical Operators:**
       - **and:** Both features must be true (e.g., (min-width: 768px) and (orientation: portrait))
       - **or:** Either feature can be true (e.g., (min-width: 768px) or (orientation: portrait))
       - **not:** Inverts the result of a feature (e.g., not (orientation: portrait))
