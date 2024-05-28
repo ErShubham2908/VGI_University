@@ -618,3 +618,45 @@ box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
     /* Styles for larger screens in portrait */
 }
 ```
+---
+---
+---
+
+Please follow resp. link for Bootstrap code and Docs: [Click Here](https://github.com/ErShubham2908/VGI_University_Bootstrap)
+
+# Bootstrap
+**Definition:** Bootstrap is a free and open-source front-end framework for developing websites and web applications. It includes **HTML, CSS, and JavaScript** components for creating responsive and mobile-first web designs.
+
+
+**Components:** Provides pre-built HTML, CSS, and JavaScript components for common UI elements like buttons, forms, navigation, and many more.
+
+**Responsiveness:** Designed with mobile-first principles, ensuring websites adapt to different screen sizes.
+
+**Popularity:** The most popular front-end framework for web development.
+
+**Ease of Use:** Speeds up development by providing pre-built components and reducing the need to write code from scratch.
+
+**Grid System:** Uses a 12-column grid layout to structure web content efficiently.
+
+**Note:**
+ - Bootstrap 5 is latest stable version and latest version is 5.3
+ - Bootstrap 5 supports all major browsers except Internet Explorer 11 and down.
+
+**Bootstrap Breakpoint**
+|Breakpoint | Class infix | Dimensions |
+|---|---|---|
+|X-Small | - | <576px|
+|Small | sm | >=576px|
+|Medium | md | >=768px | 
+|Large | lg | >=992px | 
+|Extra Large | xl | >=1200px | 
+|Extra Extra Large | xxl | >=1400px|
+
+# Bootstrap CDN:
+ - Create an HTML File
+ - Link Bootstrap CSS file
+   - [link] (<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >)
+ - Link Bootstrap JavaScript files
+ - First JavaScript File: [link]()
+ - Second JavaScript File: [link]()
+
