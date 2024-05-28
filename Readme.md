@@ -452,31 +452,23 @@ The **position** property in CSS governs how an HTML element is positioned withi
         - Example: .grid-container { display: grid; gap: 15px; } (Sets a 15px gap between both rows and columns).
 
 # Pseudo Selector
+  - In CSS, a pseudo-selector (often referred to as a pseudo-class or pseudo-element) is a keyword added to a selector that specifies a special state of the selected elements. Pseudo-selectors allow you to style elements based on their state or position in the document tree without needing to add additional classes or IDs to the HTML.
 
-1. pseudo element
-    + before
-    + after
-    + first-letter
+  - **Two main type of Pseudo selector**
 
-2. pseudo class
-    + Example :
-      + Hover
-      + active
-      + focus
-      + first-child
-      + nth-child
+**1. pseudo element:** Pseudo-elements are used to style specific parts of an element. 
+    + before: Inserts content before the content of an element.
+    + after: Inserts content after the content of an element.
+    + first-letter: Styles the first letter of a block element.
+    + first-line: Styles the first line of a block element.
 
-# Transition
+**2. pseudo class:** Pseudo-classes are used to define the special states of an element.
+      + Hover: Styles an element when the mouse pointer is over it.
+      + focus: Styles an element when it has focus (e.g., when an input field is selected).
+      + first-child: Styles the first child of a parent element.
+      + last-child: Styles the last child of a parent element.
+      + nth-child: Styles the nth child of a parent element.
 
-1. transition-property
-2. transition-duration
-3. transition-timing-function
-    1. linear
-    2. ease-in
-    3. ease-out
-    4. ease-in-out
-4. transition-delay
-5. transition : property duration timing-function delay;
 
 # Box-Shadow and Text-Shadow in CSS
 
@@ -517,3 +509,60 @@ box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] 
 ```
 box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
 ```
+# Transition in CSS
+**Definition:** Transitions are a powerful CSS feature that allows you to smoothly animate changes between different style values for an element. This creates a more visually appealing and user-friendly experience when elements on your web page change states (e.g., hovering over a button, clicking a link, changing page sections).
+
++ **CSS Transition Properties**
+**1. transition-property:** Specifies the name of the CSS property the transition effect is for.
+**2. transition-duration:** Defines how long the transition takes to complete.
+**3. transition-timing-function:** Specifies the speed curve of the transition effect. This property allows for customization of the acceleration and deceleration of the transition.
+    1. ease (defalut): starts slow, then fast, then ends slow
+    2. linear
+    3. ease-in
+    4. ease-out
+    5. ease-in-out
+    6. cubic-bezier(n,n,n,n)
+**4. transition-delay:** Specifies a delay before the transition starts.
+**You can combine all the transition properties into a single shorthand property called transition**
+1. transition : property duration timing-function delay;
+
+# Animation in CSS
+**Definition:** CSS animations allow you to animate the transition of CSS properties over time. They can be used to create smooth transitions, keyframe animations, and more.
+
+**Properties of CSS Animation:**
+1. Keyframe: Defines the animation's intermediate steps.
+```
+@keyframes animationName {
+    0% { 
+        /* Initial state */ 
+    }
+    50% { 
+        /* Intermediate state */ 
+    }
+    100% { 
+        /* Final state */ 
+    }
+}
+```
+
+**2. Animation Name:** Specifies the name of the @keyframes animation to apply to the element.
+
+**3. Animation Duration:** Specifies the duration of the animation.
+
+**4. animation-timing-function:** Specifies the speed curve of the animation.
+   1. linear
+   2. ease
+   3. ease-in
+   4. ease-out
+   5. ease-in-out
+   6. cubic-bezier(n,n,n,n).
+
+**5. Animation-delay:** Specifies a delay before the animation starts.
+**6. animation-iteration-count:** Specifies the number of times the animation should be played.
+- Possible values: infinite, any number.
+**7. animation-direction:** Specifies whether the animation should play in reverse on alternate cycles.
+- Possible Value: normal, reverse, alternate, alternate-reverse
+**8. animation-fill-mode:** Specifies how a CSS animation should apply styles to its target before and after it is executing.
+- Possible values: none, forwards, backwards, both.
+**9. animation-play-state:** Specifies whether the animation is running or paused.
+- Possible values: running, paused.
