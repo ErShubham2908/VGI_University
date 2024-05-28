@@ -386,7 +386,30 @@ The **position** property in CSS governs how an HTML element is positioned withi
 } 
 ```
 4. Sticky
+    - Combines aspects of relative and fixed.
+    - Behaves like relative until it reaches a specific scroll position.
+    - Then "sticks" to the viewport like fixed.
+    - Useful for headers that stay visible until a certain point.
+    ```
+    .sticky-element {
+        position: sticky;
+        top: 5px; 
+        left: 0;  
+} 
+```
+
 5. Fixed
+    - The element is removed from the normal document flow and positioned relative to the viewport. It stays in the same position even if the page is scrolled.
+    - Positioned relative to the viewport and remains fixed even when scrolling.
+    - Useful for navigation bars or sidebars that stay visible.
+    - Uses top, right, bottom, and left properties for positioning.
+    ```
+    .fixed-element {
+        position: fixed;
+        top: 0;   
+        left: 0;
+}
+
 
 # Display Grid
 
