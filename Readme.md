@@ -618,8 +618,7 @@ box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
     /* Styles for larger screens in portrait */
 }
 ```
----
----
+
 ---
 
 Please follow resp. link for Bootstrap code and Docs: [Click Here](https://github.com/ErShubham2908/VGI_University_Bootstrap)
@@ -652,8 +651,10 @@ Please follow resp. link for Bootstrap code and Docs: [Click Here](https://githu
 |Extra Large | xl | >=1200px | 
 |Extra Extra Large | xxl | >=1400px|
 
-# Bootstrap CDN:
+# Bootstrap Environment Setup:
+
  - Create an HTML File
+ - open bootstrap official website [Open Official Website](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
  - Link Bootstrap CSS file
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
@@ -683,3 +684,13 @@ The .container-fluid class creates a full-width container that spans the entire 
 |.container-xl | 100% | 100% | 100%| 100% | 1140px | 1320px |
 |.container-xxl | 100% | 100% | 100%| 100% | 100% | 1320px |
 |.container-fluid |  100% | 100% | 100%| 100% | 100% | 100% |
+
+# Bootstrap Layout (Grid - row & col)
+ - The Bootstrap grid system is a powerful and flexible layout system that allows developers to create responsive and mobile-first layouts using a series of containers, rows, and columns. The system is based on a 12-column layout and provides various classes to control the size and alignment of elements across different screen sizes.
+
+**Basics of Bootstrap Grid System**
+1. **Containers:** Containers are the fundamental building blocks of the Bootstrap grid system. They house the rows and columns and are required to ensure proper alignment and padding. There are two types of containers.
+ - .container: A fixed-width container with responsive breakpoints.
+ - .container-fluid: A full-width container that spans the entire width of the viewport.
+2. **Rows:** Rows are used to create horizontal groups of columns. They must be placed within a container and use the .row class.
+3. **Columns:** Columns are the building blocks of the grid system. They are used within rows and can be sized using classes like .col-md-6. Columns span a certain number of the 12 available grid columns.
